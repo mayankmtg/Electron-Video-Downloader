@@ -1,26 +1,20 @@
 [
   {
-    "name": "Meowsy",
-    "species" : "cat",
-    "foods": {
-      "likes": ["tuna", "catnip"],
-      "dislikes": ["ham", "zucchini"]
-    }
+    "name": "The Chainsmokers & Coldplay - Something Just Like This (Lyric)",
+    "format" : "mp3",
+    "size" : "50k",
+	"link" : "https://www.youtube.com/watch?v=FM7MFYoylVs"
   },
   {
-    "name": "Barky",
-    "species" : "dog",
-    "foods": {
-      "likes": ["bones", "carrots"],
-      "dislikes": ["tuna"]
-    }
+    "name": "The Chainsmokers - Closer (Lyric) ft. Halsey",
+    "format" : "mp4",
+    "size" : "50k",
+	"link" : "https://www.youtube.com/watch?v=PT2_F-1esPk"
   },
   {
-    "name": "Purrpaws",
-    "species" : "cat",
-    "foods": {
-      "likes": ["mice"],
-      "dislikes": ["cookies"]
-    }
+    "name": "Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video]",
+    "format" : "wmv",
+    "size" : "50k",
+	"link" : "https://www.youtube.com/watch?v=3AtDnEC4zak"
   }
 ]
