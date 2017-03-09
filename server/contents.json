@@ -1,20 +1,20 @@
 [
   {
-    "name": "The Chainsmokers & Coldplay - Something Just Like This (Lyric)",
-    "format" : "mp3",
+    "name": "Image Mountains",
+    "format" : "jpg",
     "size" : "50k",
-	"link" : "./server/img1.jpg"
+	"link" : "https://raw.githubusercontent.com/mayankmtg/Electron-Video-Downloader/master/server/img1.jpg"
   },
   {
-    "name": "The Chainsmokers - Closer (Lyric) ft. Halsey",
-    "format" : "mp4",
+    "name": "Image Snow",
+    "format" : "jpg",
     "size" : "50k",
-	"link" : "./server/img2.jpg"
+	"link" : "https://raw.githubusercontent.com/mayankmtg/Electron-Video-Downloader/master/server/img2.jpg"
   },
   {
-    "name": "Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video]",
-    "format" : "wmv",
+    "name": "Image Top View",
+    "format" : "jpg",
     "size" : "50k",
-	"link" : "./server/img3.jpg"
+	"link" : "https://raw.githubusercontent.com/mayankmtg/Electron-Video-Downloader/master/server/img3.JPG"
   }
 ]

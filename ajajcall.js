@@ -33,7 +33,7 @@ function Download(num){
 
 	var exec = require('child_process').exec, child;
 
-	child = exec('curl -v -X GET -H "range: bytes=1-8" '+link,
+	child = exec('curl -O '+link,
 	function (error, stdout, stderr) {
 	    console.log('stdout: ' + stdout);
 	    console.log('stderr: ' + stderr);
