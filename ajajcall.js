@@ -21,7 +21,7 @@ function setHTML(data){
 	for(i=0;i<data.length;i++){
 		stringHTML+="<div class='col-md-4'>";
 		stringHTML+="<h2>"+data[i].name+"</h2>";
-		stringHTML+="<p><a class='btn btn-default' href='#' role='button' onClick='Download("+i+")'>Download &raquo;</a></p>";
+		stringHTML+="<p><button type='button' class='btn btn-default' onclick='Download("+i+");'>Download &raquo;</button></p>";
 		stringHTML+="</div>";
 	}
 	maincontent.insertAdjacentHTML('beforeend', stringHTML);
@@ -30,16 +30,25 @@ function setHTML(data){
 function Download(num){
 	//console.log(ourData[num].name);
 	var link=ourData[num].link;
-
-	var exec = require('child_process').exec, child;
-
-	child = exec('curl -O '+link,
-	function (error, stdout, stderr) {
-	    console.log('stdout: ' + stdout);
-	    console.log('stderr: ' + stderr);
-	    if (error !== null) {
-	        console.log('exec error: ' + error);
-	    }
-	});
-	child();
+	var name=ourData[num].name;
+	var size=ourData[num].size;
+	var chunk=1024;
+	var n=size/chunk;
+	var i;
+	for(i=0;i<n-1;i++){
+		if (shell.exec('curl -r 'chunk*i+'-'+(chunk)*(i+1)-1+ ' -o '+name+'_'+i+'.png '+link).code !== 0) {
+			shell.echo('Error');
+			shell.exit(1);
+		}else{
+			console.log("Chunk "+ i);	
+		}
+	}
+	if (shell.exec('curl -r 'chunk*n-1+'- -o '+name+'_'+n-1+'.png '+link).code !== 0) {
+		shell.echo('Error');
+		shell.exit(1);
+	}
+	else{
+		console.log("Chunk "+ n-1);	
+		console.log("Finished");	
+	}
 }

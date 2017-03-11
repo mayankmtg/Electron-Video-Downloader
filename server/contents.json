@@ -1,20 +1,20 @@
 [
   {
-    "name": "Image Mountains",
+    "name": "img1",
     "format" : "jpg",
-    "size" : "50k",
+    "size" : 256000,
 	"link" : "https://raw.githubusercontent.com/mayankmtg/Electron-Video-Downloader/master/server/img1.jpg"
   },
   {
-    "name": "Image Snow",
+    "name": "img2",
     "format" : "jpg",
-    "size" : "50k",
+    "size" : 256000,
 	"link" : "https://raw.githubusercontent.com/mayankmtg/Electron-Video-Downloader/master/server/img2.jpg"
   },
   {
-    "name": "Image Top View",
+    "name": "img3",
     "format" : "jpg",
-    "size" : "50k",
+    "size" : 256000,
 	"link" : "https://raw.githubusercontent.com/mayankmtg/Electron-Video-Downloader/master/server/img3.JPG"
   }
 ]
