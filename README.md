@@ -1,6 +1,6 @@
 # Electron-Video-Downloader
 There are instances when we need to have a Desktop application but do not have the appropriate resources to develop it.
-This is an example of a video Downloader called the DownloadMania.
+This is an example of a video downloader called the DownloadMania.
 The basis of this app is same web technology that is HTML, CSS, and Javascript.
 
 Desktop Application using Electron.
